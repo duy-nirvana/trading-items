@@ -11,7 +11,6 @@ Post.propTypes = {
 
 function Post(props) {
   const match = useRouteMatch();
-  console.log({match})
 
   return (
     <Switch>

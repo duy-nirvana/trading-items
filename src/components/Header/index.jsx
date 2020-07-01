@@ -22,6 +22,26 @@ function Header(props) {
               Website cua Duy
             </NavLink>
           </Col>
+
+          <Col xs="auto">
+            <NavLink
+              exact
+              className="header__link"
+              to="/login"
+              activeClassName="header__link--active"
+            >
+              Login
+            </NavLink>
+
+            <NavLink
+              exact
+              className="header__link ml-2"
+              to="/register"
+              activeClassName="header__link--active"
+            >
+              Register
+            </NavLink>
+          </Col>
         </Row>
       </Container>
     </header>
