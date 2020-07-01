@@ -1,0 +1,20 @@
+.post-list {
+  &__card {
+    display: flex;
+    flex-direction: column;
+
+    color: #000;
+
+    border: none;
+    margin-bottom: 10px;
+
+    &__icon,
+    &__icon--active {
+      align-self: flex-end;
+      margin: 5px 10px;
+      
+      font-size: 1.5em;
+      cursor: pointer;
+    }
+  }
+}

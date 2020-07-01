@@ -11,15 +11,15 @@ function Login(props) {
   return (
     <div className="login-page d-flex justify-content-center align-items-center">
       <Form className="login-page__form">
-        <FormGroup >
+        <FormGroup>
           <Label for="email">Email</Label>
-          <Input className="login-page__input" type="email" name="email" id="email" placeholder="Enter your email" />
+          <Input className="login-page__input" type="email" name="email" id="email" />
         </FormGroup>
         <FormGroup >
           <Label for="password">Password</Label>
-          <Input className="login-page__input" type="password" name="password" id="password" placeholder="Enter your password" />
+          <Input className="login-page__input" type="password" name="password" id="password" />
         </FormGroup>
-        <Button className="w-100">Login</Button>
+        <Button className="login-page__button w-100" color="primary">Login</Button>
       </Form>
     </div>
   );

@@ -1,16 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import PostDetail from '../../components/PostDetail';
 
-PostDetail.propTypes = {
+PostDetailPage.propTypes = {
   
 };
 
-function PostDetail(props) {
+function PostDetailPage(props) {
   return (
-    <div>
-      This is post detail page
+    <div className="postdetail-page">
+      <PostDetail />
     </div>
   );
 }
 
-export default PostDetail;
+export default PostDetailPage;

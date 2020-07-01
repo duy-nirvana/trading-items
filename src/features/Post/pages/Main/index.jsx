@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import PostList from '../../components/PostList';
 
 MainPage.propTypes = {
   
@@ -7,8 +8,8 @@ MainPage.propTypes = {
 
 function MainPage(props) {
   return (
-    <div>
-      this is mainpage
+    <div className="main-page">
+      <PostList />
     </div>
   );
 }

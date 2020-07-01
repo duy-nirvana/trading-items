@@ -1,0 +1,13 @@
+.post-detail {
+  &__icon,
+  &__exchange {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__select {
+    color: #000;
+    margin-bottom: 2em;
+  }
+}
