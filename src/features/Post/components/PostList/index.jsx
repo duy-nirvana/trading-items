@@ -30,7 +30,7 @@ function PostList(props) {
           <Card className="post-list__card">
             <Link to={`${match.url}/post123456`}>
               <CardImg top width="100%" src="https://i.picsum.photos/id/37/200/200.jpg?hmac=iQLD6vXJYds0UdYxW9UhbkVxORZeEckKL-FVeaMfwF0" alt="Card image cap" />
-              <CardBody>
+              <CardBody className="post-list__card__body">
                 <CardTitle>Card title</CardTitle>
                 <CardText>Some quick example text</CardText>
               </CardBody>
@@ -48,7 +48,24 @@ function PostList(props) {
           <Card className="post-list__card">
             <Link to={`${match.url}/post123456`}>
               <CardImg top width="100%" src="https://i.picsum.photos/id/37/200/200.jpg?hmac=iQLD6vXJYds0UdYxW9UhbkVxORZeEckKL-FVeaMfwF0" alt="Card image cap" />
-              <CardBody>
+              <CardBody className="post-list__card__body">
+                <CardTitle>Card title</CardTitle>
+                <CardText>Some quick example text</CardText>
+              </CardBody>
+            </Link>
+            {
+              isIconActive ? 
+              <FaHeart className="post-list__card__icon--active" onClick={hanldeIconActive} color="red" />
+              :
+              <FaRegHeart className="post-list__card__icon" onClick={hanldeIconActive} />
+            }
+          </Card>
+        </Col>
+        <Col xs="6" lg="2">
+          <Card className="post-list__card">
+            <Link to={`${match.url}/post123456`}>
+              <CardImg top width="100%" src="https://i.picsum.photos/id/37/200/200.jpg?hmac=iQLD6vXJYds0UdYxW9UhbkVxORZeEckKL-FVeaMfwF0" alt="Card image cap" />
+              <CardBody className="post-list__card__body">
                 <CardTitle>Card title</CardTitle>
                 <CardText>Some quick example text</CardText>
               </CardBody>
@@ -66,7 +83,7 @@ function PostList(props) {
           <Card className="post-list__card">
             <Link to={`${match.url}/post123456`}>
               <CardImg top width="100%" src="https://i.picsum.photos/id/37/200/200.jpg?hmac=iQLD6vXJYds0UdYxW9UhbkVxORZeEckKL-FVeaMfwF0" alt="Card image cap" />
-              <CardBody>
+              <CardBody className="post-list__card__body">
                 <CardTitle>Card title</CardTitle>
                 <CardText>Some quick example text</CardText>
               </CardBody>
@@ -84,7 +101,7 @@ function PostList(props) {
           <Card className="post-list__card">
             <Link to={`${match.url}/post123456`}>
               <CardImg top width="100%" src="https://i.picsum.photos/id/37/200/200.jpg?hmac=iQLD6vXJYds0UdYxW9UhbkVxORZeEckKL-FVeaMfwF0" alt="Card image cap" />
-              <CardBody>
+              <CardBody className="post-list__card__body">
                 <CardTitle>Card title</CardTitle>
                 <CardText>Some quick example text</CardText>
               </CardBody>
@@ -102,7 +119,7 @@ function PostList(props) {
           <Card className="post-list__card">
             <Link to={`${match.url}/post123456`}>
               <CardImg top width="100%" src="https://i.picsum.photos/id/37/200/200.jpg?hmac=iQLD6vXJYds0UdYxW9UhbkVxORZeEckKL-FVeaMfwF0" alt="Card image cap" />
-              <CardBody>
+              <CardBody className="post-list__card__body">
                 <CardTitle>Card title</CardTitle>
                 <CardText>Some quick example text</CardText>
               </CardBody>
@@ -120,7 +137,7 @@ function PostList(props) {
           <Card className="post-list__card">
             <Link to={`${match.url}/post123456`}>
               <CardImg top width="100%" src="https://i.picsum.photos/id/37/200/200.jpg?hmac=iQLD6vXJYds0UdYxW9UhbkVxORZeEckKL-FVeaMfwF0" alt="Card image cap" />
-              <CardBody>
+              <CardBody className="post-list__card__body">
                 <CardTitle>Card title</CardTitle>
                 <CardText>Some quick example text</CardText>
               </CardBody>
@@ -138,7 +155,7 @@ function PostList(props) {
           <Card className="post-list__card">
             <Link to={`${match.url}/post123456`}>
               <CardImg top width="100%" src="https://i.picsum.photos/id/37/200/200.jpg?hmac=iQLD6vXJYds0UdYxW9UhbkVxORZeEckKL-FVeaMfwF0" alt="Card image cap" />
-              <CardBody>
+              <CardBody className="post-list__card__body">
                 <CardTitle>Card title</CardTitle>
                 <CardText>Some quick example text</CardText>
               </CardBody>
@@ -151,6 +168,97 @@ function PostList(props) {
             }
           </Card>
         </Col>
+
+        <Col xs="6" lg="2">
+          <Card className="post-list__card">
+            <Link to={`${match.url}/post123456`}>
+              <CardImg top width="100%" src="https://i.picsum.photos/id/37/200/200.jpg?hmac=iQLD6vXJYds0UdYxW9UhbkVxORZeEckKL-FVeaMfwF0" alt="Card image cap" />
+              <CardBody className="post-list__card__body">
+                <CardTitle>Card title</CardTitle>
+                <CardText>Some quick example text</CardText>
+              </CardBody>
+            </Link>
+            {
+              isIconActive ? 
+              <FaHeart className="post-list__card__icon--active" onClick={hanldeIconActive} color="red" />
+              :
+              <FaRegHeart className="post-list__card__icon" onClick={hanldeIconActive} />
+            }
+          </Card>
+        </Col>
+
+        <Col xs="6" lg="2">
+          <Card className="post-list__card">
+            <Link to={`${match.url}/post123456`}>
+              <CardImg top width="100%" src="https://i.picsum.photos/id/37/200/200.jpg?hmac=iQLD6vXJYds0UdYxW9UhbkVxORZeEckKL-FVeaMfwF0" alt="Card image cap" />
+              <CardBody className="post-list__card__body">
+                <CardTitle>Card title</CardTitle>
+                <CardText>Some quick example text</CardText>
+              </CardBody>
+            </Link>
+            {
+              isIconActive ? 
+              <FaHeart className="post-list__card__icon--active" onClick={hanldeIconActive} color="red" />
+              :
+              <FaRegHeart className="post-list__card__icon" onClick={hanldeIconActive} />
+            }
+          </Card>
+        </Col>
+
+        <Col xs="6" lg="2">
+          <Card className="post-list__card">
+            <Link to={`${match.url}/post123456`}>
+              <CardImg top width="100%" src="https://i.picsum.photos/id/37/200/200.jpg?hmac=iQLD6vXJYds0UdYxW9UhbkVxORZeEckKL-FVeaMfwF0" alt="Card image cap" />
+              <CardBody className="post-list__card__body">
+                <CardTitle>Card title</CardTitle>
+                <CardText>Some quick example text</CardText>
+              </CardBody>
+            </Link>
+            {
+              isIconActive ? 
+              <FaHeart className="post-list__card__icon--active" onClick={hanldeIconActive} color="red" />
+              :
+              <FaRegHeart className="post-list__card__icon" onClick={hanldeIconActive} />
+            }
+          </Card>
+        </Col>
+
+        <Col xs="6" lg="2">
+          <Card className="post-list__card">
+            <Link to={`${match.url}/post123456`}>
+              <CardImg top width="100%" src="https://i.picsum.photos/id/37/200/200.jpg?hmac=iQLD6vXJYds0UdYxW9UhbkVxORZeEckKL-FVeaMfwF0" alt="Card image cap" />
+              <CardBody className="post-list__card__body">
+                <CardTitle>Card title</CardTitle>
+                <CardText>Some quick example text</CardText>
+              </CardBody>
+            </Link>
+            {
+              isIconActive ? 
+              <FaHeart className="post-list__card__icon--active" onClick={hanldeIconActive} color="red" />
+              :
+              <FaRegHeart className="post-list__card__icon" onClick={hanldeIconActive} />
+            }
+          </Card>
+        </Col>
+
+        <Col xs="6" lg="2">
+          <Card className="post-list__card">
+            <Link to={`${match.url}/post123456`}>
+              <CardImg top width="100%" src="https://i.picsum.photos/id/37/200/200.jpg?hmac=iQLD6vXJYds0UdYxW9UhbkVxORZeEckKL-FVeaMfwF0" alt="Card image cap" />
+              <CardBody className="post-list__card__body">
+                <CardTitle>Card title</CardTitle>
+                <CardText>Some quick example text</CardText>
+              </CardBody>
+            </Link>
+            {
+              isIconActive ? 
+              <FaHeart className="post-list__card__icon--active" onClick={hanldeIconActive} color="red" />
+              :
+              <FaRegHeart className="post-list__card__icon" onClick={hanldeIconActive} />
+            }
+          </Card>
+        </Col>
+
 
       </Row>
     </Container>
