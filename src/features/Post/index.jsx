@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Switch, Route, useRouteMatch } from 'react-router-dom';
-import MainPage from './pages/Main';
 import NotFound from '../../components/NotFound';
-import PostDetail from './pages/PostDetail';
 import PostDetailPage from './pages/PostDetail';
+import PostMainPage from './pages/Main';
 
 Post.propTypes = {
   
@@ -15,7 +14,7 @@ function Post(props) {
 
   return (
     <Switch>
-      <Route exact path={match.url} component={MainPage}/>
+      <Route exact path={match.url} component={PostMainPage}/>
 
       <Route path={`${match.url}/:postId`} component={PostDetailPage} />
 

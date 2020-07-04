@@ -34,10 +34,6 @@ function PostDetail(props) {
           </div>
         </Col>
       </Row>
-
-      <Row>
-        
-      </Row>
     </Container>
   );
 }

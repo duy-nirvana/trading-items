@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import PostList from '../../components/PostList';
 
-MainPage.propTypes = {
+PostMainPage.propTypes = {
   
 };
 
-function MainPage(props) {
+function PostMainPage(props) {
   return (
     <div className="main-page">
       <PostList />
@@ -14,4 +14,4 @@ function MainPage(props) {
   );
 }
 
-export default MainPage;
+export default PostMainPage;

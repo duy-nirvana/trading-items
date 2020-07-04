@@ -1,6 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { useRouteMatch, Switch, Route } from 'react-router-dom';
+import { Route, Switch, useRouteMatch } from 'react-router-dom';
 
 User.propTypes = {
   
@@ -11,7 +10,8 @@ function User(props) {
 
   return (
     <Switch>
-      <Route exact path={}/>
+
+      
     </Switch>
   );
 }

@@ -4,6 +4,9 @@ import NotFound from './components/NotFound';
 import Header from './components/Header';
 import Register from './features/User/pages/Register';
 import Login from './features/User/pages/Login';
+import User from './features/User';
+import Product from './features/Product';
+
 
 // Lazy load
 const Post = React.lazy(() => import('./features/Post'));
@@ -20,8 +23,10 @@ function App() {
               <Redirect exact from="/" to='/posts' />
 
               <Route path="/posts" component={Post} />
+              <Route path="/product" component={Product} />
               <Route path="/login" component={Login} />
               <Route path="/register" component={Register} />
+              
               <Route component={NotFound} />
             </Switch>          
           </div>
