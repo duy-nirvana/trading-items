@@ -17,15 +17,13 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  createAt: Date,
-  updatedAt: Date,
   deletedAt: Date,
   phone: {
     type: String,
     required: true,
   },
   address: String
-})
+}, {timestamps : true })
 
 const User = mongoose.Model('User', userSchema);
 module.exports = User;

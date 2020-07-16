@@ -13,9 +13,13 @@ const productSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  createdAt: Date,
-  updatedAt: Date,
+  createdAt: {timestamps : true },
+  updatedAt: {timestamps : true },
   count: Number,
+  status: {
+    type: Number,
+    enum: [1, 2, 3] // ['pending', 'accept', 'reject']
+  }
 }) 
 
 const Product = mongoose.Model('Product', productSchema);

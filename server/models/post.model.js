@@ -5,22 +5,23 @@ const postSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  productIDs: Array,
-  lovedUserIDs: Array,
-  comments: {
+  productIDs: [
+    mongoose.Schema.Types.ObjectId
+  ],
+  lovedUserIDs: [
+    mongoose.Schema.Types.ObjectId
+  ],
+  comments: [{
     content: String,
-    createdBy: String,
-    createdAt: Date,
-    updatedAt: Date,
+    createdBy: mongoose.Schema.Types.ObjectId,
     deletedAt: Date,
-    replyCommentID: Array,
-  },
-  createdAt: Date,
-  createdBy: String,
-  updatedAt: Date,
+    replyCommentID: mongoose.Schema.Types.ObjectId
+  
+  }],
+  createdBy: mongoose.Schema.Types.ObjectId,
   deletedAt: Date,
-  expiratedAt: Date,
-})
+  expiredAt: Date,
+}, {timestamps : true })
 
 const Post = mongoose.Model('Post', postSchema);
 module.exports = Post;

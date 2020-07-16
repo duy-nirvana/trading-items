@@ -9,13 +9,11 @@ const transactionSchema = new mongoose.Schema({
     type: Object,
     required: true,
   },
-  createdAt: Date,
-  status: Boolean,
   status: {
-    type: Boolean,
+    type: Number,
     enum: [1, 2, 3] // ['pending', 'accept', 'reject']
   },
-})
+}, {timestamps : true })
 
 const Transaction = mongoose.Model('Transaction', transactionSchema);
 module.exports = Transaction;
