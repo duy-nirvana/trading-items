@@ -25,6 +25,5 @@ const userSchema = new mongoose.Schema({
   address: String
 }, {timestamps : true })
 
-const User = mongoose.Model('User', userSchema);
+const User = mongoose.model('User', userSchema, 'users');
 module.exports = User;
-

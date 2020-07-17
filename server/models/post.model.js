@@ -23,5 +23,5 @@ const postSchema = new mongoose.Schema({
   expiredAt: Date,
 }, {timestamps : true })
 
-const Post = mongoose.Model('Post', postSchema);
+const Post = mongoose.model('Post', postSchema, 'posts');
 module.exports = Post;

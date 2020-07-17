@@ -15,5 +15,5 @@ const transactionSchema = new mongoose.Schema({
   },
 }, {timestamps : true })
 
-const Transaction = mongoose.Model('Transaction', transactionSchema);
+const Transaction = mongoose.model('Transaction', transactionSchema, 'transactions');
 module.exports = Transaction;
