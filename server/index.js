@@ -6,7 +6,7 @@ const port = 3001;
 
 const userRoute = require('./routes/user.route');
 
-mongoose.connect('mongodb://localhost/trading-items', {useNewUrlParser: true});
+mongoose.connect('mongodb://localhost/trading-items', {useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true }))

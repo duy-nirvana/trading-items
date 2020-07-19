@@ -14,12 +14,16 @@ module.exports.getByID = async (req, res) => {
 
 module.exports.getListByName = async (req, res) => {
   const q = req.query.q;
-  const users = await User.find();
-  const matchedUsers = users.filter(user => {
-    return user.displayName.toLowerCase().indexOf(q.toLowerCase()) !== -1;
-  })
+  const users = await User.find({
+    displayName: {
+      $regex: new RegExp(q, "gi")
+    }
+  });
+  // const matchedUsers = users.filter(user => {
+  //   return user.displayName.toLowerCase().indexOf(q.toLowerCase()) !== -1;
+  // })
 
-  res.json(matchedUsers);
+  res.json(users);
 }
 
 module.exports.create = async (req, res) => {
